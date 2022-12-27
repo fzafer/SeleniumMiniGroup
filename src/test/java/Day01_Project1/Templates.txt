@@ -1,0 +1,137 @@
+package Day01_Project1;
+
+FIRST OF ALL, ADD THOSE INTO POM.XML
+ <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+/*
+import com.cydeo.utilities.WebDriverFactory;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class TemplatesArchive {
+
+    public static void main(String[] args) {
+/*
+//1. Open Chrome browser
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+
+//2. Go to https://practice.cydeo.com
+        driver.navigate().to("https://practice.cydeo.com");
+        driver.get("https://practice.cydeo.com");
+
+//3. Search bar giriş ve Enter
+        Click google search button
+        WebElement googleSearchBox = driver.findElement(By.name("q"));
+        googleSearchBox.sendKeys("apple" + Keys.ENTER);
+
+//3. Tıklayarak
+        WebElement abTestLink = driver.findElement(By.linkText("A/B Testing"));
+        abTestLink.click();
+
+//4. title kontrol etme
+        String expectedtitle = "No A/B Test";
+        String actualTitle = driver.getTitle();
+
+        if (actualTitle.equals(expectedtitle)){
+            System.out.println("title verification PASSED!");
+        }else{
+            System.out.println("title verification FAILED!!!");
+        }
+
+
+        //tagName[@attribute='value']
+        //    - using name attribute         : //a[@name='uh68']
+        //        - using class attribute     : //a[@class='ff58']
+        //        - using id attribute         : //a[@id='bb22']
+
+        //    #1- //tagName[@attribute='value']
+        //    #2- //tagName[contains(@attribute, 'value')]
+        //    #3- //tagName[.='text']  same as //tagName[text()='text']
+        //    #4- //*[@attribute='value']
+
+        ////*[@id="login-popup"]/form/div[2]/div[1]/input
+        ////*[@id="login-popup"]/form/div[2]/div[1]/input
+
+
+
+        //enter user name
+
+        WebElement username1 = driver.findElement(By.xpath("//input[@id='prependedInput']"));
+        username1.sendKeys("abcd");
+        Thread.sleep(100);
+
+
+//XPATH örnekleri:
+        WebElement username2 = driver.findElement(By.xpath("//input[@class='span2']"));
+        username2.sendKeys("rggg");
+        Thread.sleep(100);
+
+        WebElement username3 = driver.findElement(By.xpath("//input[@name='_username']"));
+        username3.sendKeys("htrhrt");
+        Thread.sleep(100);
+
+        WebElement username4 = driver.findElement(By.xpath("//input[@placeholder='Username or Email']"));
+        username4.sendKeys("rgg");
+        //enter password
+        WebElement password1 = driver.findElement(By.xpath("//input[@type='password']"));
+        password1.sendKeys("rggg");
+        Thread.sleep(200);
+
+        WebElement password2 = driver.findElement(By.xpath("//input[@id='prependedInput2']"));
+        password1.sendKeys("rggg");
+        Thread.sleep(200);
+
+        WebElement password3 = driver.findElement(By.xpath("//input[@class='span2']"));
+        password1.sendKeys("rggg");
+        Thread.sleep(200);
+
+        WebElement password4 = driver.findElement(By.xpath("//input[@name='_password']"));
+        password1.sendKeys("rggg");
+        Thread.sleep(200);
+
+        WebElement password5 = driver.findElement(By.xpath("//input[@placeholder='Password']"));
+        password1.sendKeys("rggg");
+        Thread.sleep(200);
+
+
+        //click login button
+        WebElement loginbutton1 = driver.findElement(By.xpath("//button[@type='submit']"));
+        System.out.println("type= " +loginbutton1.getText());
+        System.out.println("type= " +loginbutton1.getAttribute("type"));
+
+        WebElement loginbutton2 = driver.findElement(By.xpath("//button[@class='btn btn-uppercase btn-primary pull-right']"));
+        System.out.println("class= " +loginbutton1.getText());
+        System.out.println("class= " +loginbutton1.getAttribute("class"));
+
+        WebElement loginbutton3 = driver.findElement(By.xpath("//button[@id='_submit']"));
+        System.out.println("id= " +loginbutton1.getText());
+        System.out.println("id= " +loginbutton1.getAttribute("id"));
+
+        WebElement loginbutton4 = driver.findElement(By.xpath("//button[@name='_submit']"));
+        System.out.println("name= " +loginbutton1.getText());
+        System.out.println("name= " +loginbutton1.getAttribute("name"));
+
+        loginbutton4.click();
+*/
+    }
+}
