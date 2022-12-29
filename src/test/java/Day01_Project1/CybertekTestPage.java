@@ -2,12 +2,14 @@ package Day01_Project1;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CybertekTestPage {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
 
         //1. Open Chrome browser
         WebDriverManager.chromedriver().setup();
@@ -16,6 +18,11 @@ public class CybertekTestPage {
 
         //5-	Open webpage www.turkeyoutdoor.org
         driver.get("https://www.turkeyoutdoor.org");
+
+        WebElement forum = driver.findElement(By.linkText("https://turkeyoutdoor.org/community/"));
+        Thread.sleep(5000);
+        forum.click();
+        Thread.sleep(5000);
 
         driver.close();
 
