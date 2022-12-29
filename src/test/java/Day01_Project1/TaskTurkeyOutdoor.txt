@@ -1,0 +1,33 @@
+1-	Create a mawen Project in java name as “DailyMeetingProject”
+2-	Create a package name “seleniumProject”
+3-	Create a class name “SeleniumProject1”
+       Write code for;
+4-	Open a browser
+5-	Open webpage www.turkeyoutdoor.org
+	Commit and Push
+6-	Click on “Forum” link
+7-	Click “İsim” input box and write a name
+	Commit an push
+8-	Click “e-posta”  input box and write a email
+9-	Click “mesaj” input box and write a name
+	Commit and Push
+10-   Click the "Bize Yazın" button
+11-	 Verify the result box is contain "başarılı" Word
+	Commit and Push
+12- Take page the Previous Page
+13-Verify the Title is “Türkiye'nin Outdoor Sayfası”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
