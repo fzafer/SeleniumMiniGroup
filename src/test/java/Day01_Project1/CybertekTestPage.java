@@ -19,17 +19,21 @@ public class CybertekTestPage {
         //5-	Open webpage www.turkeyoutdoor.org
         driver.get("https://www.turkeyoutdoor.org");
 
-        WebElement forum = driver.findElement(By.linkText("https://turkeyoutdoor.org/community/"));
-        Thread.sleep(5000);
+        //6-	Click on “Forum” link
+        WebElement forum = driver.findElement(By.linkText("FORUM"));
         forum.click();
-        Thread.sleep(5000);
 
-        driver.close();
+        //7-	Click “İsim” input box and write a name
+        WebElement isim = driver.findElement(By.id("isim"));
+        isim.sendKeys("Test");
+
+
+        //driver.close();
 
 
         //	Commit and Push
-        //6-	Click on “Forum” link
-        //7-	Click “İsim” input box and write a name
+
+
         //	Commit an push
         //8-	Click “e-posta”  input box and write a email
         //9-	Click “mesaj” input box and write a name
