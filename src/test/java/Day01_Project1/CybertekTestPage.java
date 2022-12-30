@@ -27,16 +27,20 @@ public class CybertekTestPage {
         WebElement isim = driver.findElement(By.id("isim"));
         isim.sendKeys("Test");
 
+        //	Commit and Push
+        //8-	Click “e-posta”  input box and write a email
+        WebElement emailText=driver.findElement(By.id("e-posta"));
+        emailText.sendKeys("vahap@gmail.com");
+        //	Commit an push
+
+
+
+
+
+        //9-	Click “mesaj” input box and write a name
+
 
         //driver.close();
-
-
-        //	Commit and Push
-
-
-        //	Commit an push
-        //8-	Click “e-posta”  input box and write a email
-        //9-	Click “mesaj” input box and write a name
         //	Commit and Push
         //10-   Click the "Bize Yazın" button
         //11-	 Verify the result box is contain "başarılı" Word
