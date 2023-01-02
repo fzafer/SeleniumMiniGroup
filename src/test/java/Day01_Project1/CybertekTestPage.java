@@ -33,16 +33,16 @@ public class CybertekTestPage {
         emailText.sendKeys("vahap@gmail.com");
         //	Commit an push
 
-
-
-
-
         //9-	Click “mesaj” input box and write a name
+        WebElement mesaj = driver.findElement(By.id("mesaj"));
+        mesaj.sendKeys("test");
 
-
-        //driver.close();
         //	Commit and Push
         //10-   Click the "Bize Yazın" button
+        WebElement bizeYazin = driver.findElement(By.cssSelector(".coblocks-form__submit.wp-block-button>button"));
+        bizeYazin.click();
+
+
         //11-	 Verify the result box is contain "başarılı" Word
         //	Commit and Push
         //12- Take page the Previous Page
